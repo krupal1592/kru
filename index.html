@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style> 
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 150px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+    table, th, td {
+    border: 1px solid black;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+.circle
+{
+  border-radius: 82px!important;
+  width: 150px!important;
+  height: 150px!important; 
+}
+.table
+{
+  width:100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+#boxing
+{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#boxing td, #boxing th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#boxing tr:nth-child(even){background-color: #f2f2f2;}
+
+#boxing tr:hover {background-color: #ddd;}
+
+#boxing th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #aaeee8;
+    color: white;
+}
+.feedback
+{
+    background-color: #eee8aa;
+    width: 100px;
+    height: 42px;
+}
+</style>
+</head>
+<body>
+        <div id="main">
+        
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <h1>Athlete Name</h1>
+        <h2>Athlete Country</h2>
+        <p>
+         Mary kom
+        </p>
+        <p>India</p>
+        
+<div id="example1">
+</div>
+<div class="gallery">
+  <a target="_blank" href="Mary_Kom_2.jpg">
+    <img src="Mary_Kom_2.jpg" alt="Trolltunga Norway" class="circle">
+  </a>
+  <div class="desc">Practice Time</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Kru1.jpg">
+    <img src="Kru1.jpg" width="600" height="400" class="circle">
+  </a>
+  <div class="desc">Win a gold medal</div>
+</div>
+
+
+
+<div style="background-color:palegoldenrod;color:black;padding:20px;">
+  <h2>Gold medal</h2>
+  <p>She was win gold medal in World women championships</p>
+  <h3>Awards</h3>
+    <p>She gets padmshree award</p>
+    <h4>How many Gold medal she win?</h4>
+    <p>She win Fourteen Gold medal</p>
+    
+</div> 
+
+<table  id="boxing" class="table">
+  <tr>
+    <th>Tournament</th>
+    <th>Medal</th> 
+    <th>Year</th>
+      <th>City</th>
+  </tr>
+  <tr>
+    <td>world boxing championships</td>
+    <td>Gold</td>
+    <td>2002</td>
+      <td>Antalya</td>
+  </tr>
+  <tr>
+    <td>Summer Olympic</td>
+    <td>Bronze</td>
+    <td>2012</td>
+      <td>London</td>
+  </tr>
+  <tr>
+    <td>Witch Cup</td>
+    <td>Gold</td>
+    <td>2002</td>
+      <td>Pecs</td>
+  </tr>
+</table>
+<form action="/my-handling-form-page" method="post">
+    <div style="background-color:palegoldenrod;color:indigo;padding:20px;">
+        
+        <label for="FirstName">FirstName:</label>
+        <input type="text" id="FirstName" name="Krupal">
+    
+        <label for="LastName">LastName:</label>
+        <input type="text" id="LastName" name="Patel">
+    </div>
+    </form>
+
+<form action="/action_page.php">
+  <select name="Feedback" class="feedback">
+    <option value="Bad">Bad</option>
+    <option value="Average">Average</option>
+    <option value="Good">Good</option>
+    <option value="Excelent">Excelent</option>
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+
+</body>
+    
+</html>
